@@ -1,6 +1,6 @@
-# RentalX
+# RentalX - A Car Rental App with Node.js
 
-### _Rocketseat React Course's Project_
+### _Rocketseat Ignite Node.js Course's Project_
 
 ---
 
