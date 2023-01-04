@@ -1,15 +1,20 @@
 import { Category } from "../model/Category";
+import {
+  ICategoryService,
+  ICreateCategoryDTO,
+} from "./interface.category.service";
 
-interface ICreateCategoryDTO {
-  name: string;
-  description: string;
-}
-
-class CategoryService {
+class CategoriesService implements ICategoryService {
   private categories: Category[];
 
   constructor() {
     this.categories = [];
+  }
+
+  findByName(name: string): Category {
+    const category = this.categories.find((category) => category.name === name);
+
+    return category;
   }
 
   create({ description, name }: ICreateCategoryDTO): void {
@@ -23,6 +28,10 @@ class CategoryService {
 
     this.categories.push(category);
   }
+
+  list(): Category[] {
+    return this.categories;
+  }
 }
 
-export { CategoryService };
+export { CategoriesService };

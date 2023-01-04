@@ -7,8 +7,10 @@
 ## Key Concepts Learned
 
 - Typescript: interfaces, classes
-- Next.js: express, Routes middleware
-- Next.js: Routes services
+- Node.js: express, Routes middlewares
+- OOP: controllers and services build with OOP
+- MVS Pattern: Controller, Service, and Model
+- S.O.L.I.D.: SRP, LSP, DIP
 
 [in progress ...]
 
